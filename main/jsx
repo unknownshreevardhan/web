@@ -1,0 +1,54 @@
+import React from 'react';
+import './Main.css';
+import { assets } from '../../assets/assets';
+
+const Main = () => {
+  return (
+    <div className="Main">
+      <div className="nav">
+        <p>Gargantua</p>
+        <img src={assets.user_icon} alt="" />
+      </div>
+      <div className="Maincontainer">
+        <div className="Greet">
+          <p><span>Gargantua here.</span></p>
+          <p>How may I assist you today?</p>
+       </div>
+       <div className="cards">
+        <div className="card">
+          <p>Who created the hydrogen bomb and why?</p>
+          <img src={assets.bulb_icon} alt="" />
+        </div>
+         <div className="card">
+          <p>Write a basic HTML page with a heading and a paragraph</p>
+          <img src={assets.code_icon} alt="" />
+        </div>
+         <div className="card">
+          <p>What’s the capital of Japan</p>
+          <img src={assets.message_icon} alt="" />
+        </div>
+         <div className="card">
+          <p>Summarize the plot of Interstellar with key terms</p>
+          <img src={assets.compass_icon} alt="" />
+        </div>        
+        </div> 
+
+           <div className="main-bottom">
+            <div className="search-box">
+              <input type="text" placeholder='Type it. Watch me flex.' />
+              <div>
+                <img src={assets.gallery_icon} alt="" />
+                <img src={assets.mic_icon}alt="" />
+                <img src={assets.send_icon} alt="" />
+              </div>
+            </div>
+             <p className="bottom-info">
+              AI-generated, may contain errors. Cross-check critical answers. This is an AI system — not always perfect. Sources provided, accuracy not guaranteed. Smarter search, human verification still required
+             </p>
+            </div>   
+      </div>
+    </div>
+  )
+}
+
+export default Main
